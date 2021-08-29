@@ -1,0 +1,15 @@
+<app-dashboard></app-dashboard>
+<div class="input-group">
+  <div class="form-outline">
+    <input type="text" id="form1"name="search" class="form-control" (click)="myfunction()" /><button type="button" class="btn btn-primary">search</button>
+  </div>
+</div>
+<ul class="list-group"  *ngFor="let post of postList"> 
+    <li class="list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="showDiv(post.id)">{{post.title}}</li>
+    <div *ngIf="show && checkId==post.id">
+        {{post.body}}
+    </div>
+ </ul>
+ 
+
+  

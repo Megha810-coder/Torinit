@@ -1,0 +1,7 @@
+<app-dashboard></app-dashboard>
+<ul class="list-group"  *ngFor="let todoc of todocList"> 
+    
+    <li class="list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+         <input type="checkbox" [checked]="todoc.completed"> {{todoc.title}}
+    </li>
+ </ul>

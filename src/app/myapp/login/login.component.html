@@ -1,0 +1,9 @@
+<body style='font-family: Times New Roman, verdana, sans-serif;'>
+	<div style='width: 70%; padding:20%;  border: 5px solid #316ED6; background-color: #648CD1; color: #31D8EB; margin: auto; text-align: center;'>
+<form #myform="ngForm" (ngSubmit)="login(myform.value)">
+<input type="text" size="30" name="email" ngModel>&nbsp;&nbsp;&nbsp;
+<button type="submit" class="btn btn-primary">Login</button>
+</form>
+    </div>
+</body>
+<router-outlet></router-outlet>
